@@ -35,6 +35,7 @@ dependencies {
     implementation libs.activity
     implementation libs.constraintlayout
     testImplementation libs.junit
+    implementation files('libs\\ksoap2-android-assembly-3.4.0-jar-with-dependencies.jar')
     androidTestImplementation libs.ext.junit
     androidTestImplementation libs.espresso.core
 }

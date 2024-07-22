@@ -6,30 +6,76 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
+
+
+
 <LinearLayout
+    android:id="@+id/form"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
   android:orientation="vertical">
-
+  <View
+      android:layout_width="wrap_content"
+      android:layout_height="0sp"
+      android:layout_weight="9"/>
   <EditText
       android:id="@+id/nombre"
       android:layout_width="300sp"
-      android:layout_height="40sp"
+      android:layout_height="0sp"
+      android:layout_weight="2"
+      android:layout_gravity="center"
       tools:ignore="MissingConstraints" />
+  <View
+      android:layout_width="wrap_content"
+      android:layout_height="0sp"
+      android:layout_weight="9"/>
   <Button
       android:id="@+id/consumir"
       android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
+      android:layout_height="0sp"
+      android:layout_weight="2"
+      android:layout_gravity="center"
       android:text="Consumir Servicio"
       tools:ignore="MissingConstraints" />
+  <View
+      android:layout_width="wrap_content"
+      android:layout_height="0sp"
+      android:layout_weight="9"/>
   <TextView
       android:id="@+id/response"
       android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
+      android:layout_height="0sp"
+      android:layout_weight="2"
+      android:layout_gravity="center"
       android:text="Aqui va la respuesta"
       tools:ignore="MissingConstraints" />
+  <View
+      android:layout_width="wrap_content"
+      android:layout_height="0sp"
+      android:layout_weight="9"/>
 </LinearLayout>
+<View
+    android:id="@+id/fondo"
+    android:background="#837D7D"
+    android:alpha="0.9"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"/>
 
-
-
+  <ProgressBar
+      android:id="@+id/progress"
+      android:layout_width="200sp"
+      android:layout_height="200sp"
+      android:indeterminateTint="#FA0606"
+      android:layout_centerHorizontal="true"
+      android:layout_centerVertical="true"
+      android:progress="50"/>
+  <TextView
+      android:id="@+id/cargando"
+      android:layout_width="wrap_content"
+      android:textSize="30sp"
+      android:layout_above="@+id/progress"
+      android:text="CARGANDO...."
+      android:layout_height="wrap_content"
+      android:textColor="#FD0303"
+    android:layout_centerInParent="true"/>
 </RelativeLayout>
